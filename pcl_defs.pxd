@@ -64,7 +64,7 @@ cdef extern from "pcl/surface/mls.h" namespace "pcl":
         void setSearchRadius (double)
         void setPolynomialOrder(bool)
         void setPolynomialFit(int)
-        void reconstruct (PointCloud[I])
+        void process (PointCloud[N])
 
 ctypedef MovingLeastSquares[PointXYZ,Normal] MovingLeastSquares_t
 
